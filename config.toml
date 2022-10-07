@@ -1,0 +1,19 @@
+baseURL = "/"
+languageCode = "en-us"
+
+title = "Speki"
+theme = "kraiklyn"
+
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+[params]
+#externalTitle = "Kraiklyn theme"
+sidebarColor = "default"
+customCss = []
+
+[[menu.shortcuts]]
+name = "Speki on Github"
+url = "https://github.com/TBS1996/speki"
+weight = 10
+

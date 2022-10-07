@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta name="generator" content="Hugo 0.99.1" />
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Speki</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Speki" />
+
+</head>
+<body>
+
+<div class="sidebar sidebar-default">
+    <div class="navigation">
+        <div>
+    
+</div>
+
+        <h1 class="site-title"><a href="/">Speki</a></h1>
+
+
+        <nav class="internal">
+            <ul>
+    
+        
+                <li>
+        <a href="#introduction">About</a>
+
+    </li>
+
+
+        
+                <li>
+        <a href="#summary">Installation</a>
+
+    </li>
+
+
+        
+                <li>
+        <a href="#characters">manual</a>
+
+    </li>
+
+
+        
+    
+</ul>
+
+        </nav>
+
+        <nav class="external">
+            <div class="external-title"></div>
+            
+            <ul id="shortcuts">
+                
+                <li>
+                    <a href="https://github.com/TBS1996/speki" target="_blank" rel="noopener">Speki on Github</a>
+                </li>
+                
+            </ul>
+            
+        </nav>
+    </div>
+
+</div>
+
+<div class="content">
+    
+        
+                <section class="page" id="introduction">
+    <h1>
+        <a href="#introduction">About</a>
+    </h1>
+    <div class="content">
+        <h3 id="speki-brings-the-power-of-flashcards-to-your-terminal">Speki brings the power of flashcards to your terminal</h3>
+<p><a href="https://youtu.be/hV1iETM6T8g"><img src="https://i.imgur.com/njEoYNL.png" alt="Watch the video"></a></p>
+<p>&hellip; But the fact that it&rsquo;s in the terminal is not the reason you should be interested. Normal flashcards apps are all about memorization of learned knowledge. With Speki you can discover new concepts through incremental reading, solidify your understanding through a sophisticated knowledge-dependency system, and eventually reinforcing what you&rsquo;ve learned with spaced repetition.</p>
+<p>First of all, if for now you just want &ldquo;anki in the terminal&rdquo; and nothing more, then that&rsquo;s totally fine too! In fact, you can from within the app download any anki deck and get started right away. Skip to the installation and then manual section if this is you! If you wanna learn about Speki&rsquo;s most powerful features however, keep on reading!</p>
+<h3 id="knowledge-dependency">Knowledge dependency</h3>
+<p>Quick! Memorize the following fact!</p>
+<blockquote>
+<p>the nucleus is a membrane-bound organelle found in eukaryotic cells</p>
+</blockquote>
+<p>Using anki, you can probably memorize this fact fairly easily by simply making a flashcard to it, but if you&rsquo;re like me you have no idea what this actually means. A seasoned anki-user would know you&rsquo;re not supposed to memorize what you don&rsquo;t understand, and wouldn&rsquo;t put it into anki before they&rsquo;ve tried to fully understand what this means, or they&rsquo;d simply skip it.
+This is a perfect example of where Speki&rsquo;s system of knowledge-depencies shines through. To explain it, you must know two key concepts of cards in Speki.</p>
+<ol>
+<li>A card can have the status of <em>unfinished</em>. Meaning it has the question, but you have yet to find the answer to it.</li>
+<li>A card can have the status of <em>unresolved</em>. This is when understanding the card depends on understanding other cards. If any of its dependencies are unfinished, or unresolved,  then that card is also unresolved and will not be shown.</li>
+</ol>
+<p>If you look back to the example card I gave you, it&rsquo;s clear that to understand what a nucleus is, you would have to understand what a eukaryotic cell is, what an organelle is, and what it means for an organelle to be membrane-bound.</p>
+<p>In Speki, you can simply add the &ldquo;what is a nucleus card&rdquo; as normal, and then you add new <em>dependency-cards</em> to it, with where you ask about other concepts you need to learn first. You can add those cards as unfinished when you don&rsquo;t know the answer to them yet. The &ldquo;what is the nucleus card&rdquo; is now marked as <em>unresolved</em> because understanding it depends on knowledge that you do not yet have.</p>
+<p>You will not be asked to memorize this card, but instead you will be shown its unfinished dependencies such as &ldquo;what is an organelle&rdquo; and it&rsquo;s your job to find out the answer. This graph of dependencies work recursively, meaning that when you find a definition for an organelle, it might also itself depend on knowledge that you don&rsquo;t have. This process would then repeat itself until you&rsquo;ve mapped out all the dependencies to &ldquo;what is a nucleus&rdquo;. When you&rsquo;ve learned all its dependencies, only then will you be asked to memorize the original card.</p>
+<p>This means that instead of needing a separate study method for learning concepts next to your flashcard-learning, you can put advanced concepts directly in a card and let the sophisticated dependency-logic ensure that you will fully understand it before you memorize it.</p>
+<h3 id="incremental-reading">Incremental reading</h3>
+<p>So I&rsquo;ve explained how you can learn any concept you want with Speki, but how about the process of learning about what you want to learn? That&rsquo;s where <em>incremental reading</em> comes in. A concept from a program called supermemo, it is the process of taking a long-form text and incrementally taking extracts of the information you find interesting, and then making flashcards from those extracts.</p>
+<p>If for example you need to read a book or a scientific paper and understand it fully, you can navigate to the incremental reading tab, paste it all in and work your way through it. When you come across something you want to remember, simplky make a cloze-card out of it. If you come across something you don&rsquo;t understand, you can follow the dependency-solution as outlined above.</p>
+
+    </div>
+</section>
+
+
+
+
+        
+                <section class="page" id="summary">
+    <h1>
+        <a href="#summary">Installation</a>
+    </h1>
+    <div class="content">
+        <p>I&rsquo;ll add this to various linux package managers soon! But for now, if you wanna use it you can do the following:</p>
+<ul>
+<li>make sure rust and git is installed</li>
+<li>in your terminal, navigate to where you wanna download this project</li>
+<li>enter following command:</li>
+</ul>
+<pre tabindex="0"><code> git clone https://github.com/TBS1996/speki
+</code></pre><ul>
+<li>in the  directory, enter &ldquo;cargo run&rdquo;</li>
+</ul>
+<p>If you have any questions, feel free to open up an issue!</p>
+
+    </div>
+</section>
+
+
+
+
+        
+                <section class="page" id="characters">
+    <h1>
+        <a href="#characters">manual</a>
+    </h1>
+    <div class="content">
+        <h3 id="keybindings">Keybindings</h3>
+<h4 id="general">General</h4>
+<p>Next tab: <strong>Tab</strong><br>
+Previous tab: <strong>Shift+Tab</strong><br>
+Switch between widgets: <strong>Alt + (h | j | k | l)</strong>  (or alt+arrowkeys)<br>
+Quit: <strong>Alt+q</strong></p>
+<h4 id="review-tab">Review tab</h4>
+<p>Skip card or text: <strong>Alt+s</strong><br>
+Mark unfinished card as finished: <strong>Alt+f</strong><br>
+On a text, make a new card with text as source: <strong>Alt+a</strong><br>
+Add existing card as dependency: <strong>Alt+y</strong><br>
+Add existing card as dependent: <strong>Alt+t</strong><br>
+Add new card as dependency: <strong>Alt+Y</strong><br>
+Add new card as dependent: <strong>Alt+T</strong><br>
+Rate your recall grade: <strong>1-4</strong><br>
+1. No recall even after you see the answer<br>
+2. Failed recall when presented answer, but answer is familiar<br>
+3. Correct recall after some time to think<br>
+4. Instant correct recall</p>
+<h4 id="add-card-tab">Add card tab</h4>
+<p>Add card as unfinished: <strong>Alt+u</strong><br>
+Add card as finished: <strong>Alt+f</strong></p>
+<h4 id="incremental-reading-tab">Incremental reading tab</h4>
+<p>Add new text under selected topic: <strong>Alt+a</strong></p>
+<h4 id="widget-specific-keybindings">Widget-specific keybindings</h4>
+<h5 id="topic-list">Topic list</h5>
+<p>Add new topic: <strong>a</strong><br>
+up/down: <strong>k/j</strong> <br>
+Place topic below topic beneath: <strong>l</strong><br>
+Put topic one step up: <strong>h</strong><br>
+move topic up/down: <strong>K/J</strong></p>
+<h5 id="incremental-reading-widget">Incremental reading widget</h5>
+<p>normal mode: <strong>Ctrl+c</strong><br>
+visual mode from normal mode: <strong>v</strong> <br>
+insert mode from normal mode: <strong>i</strong> <br>
+new extract from visual mode: <strong>Alt+x</strong> <br>
+new cloze from visual mode: <strong>Alt+z</strong><br>
+scroll down: <strong>Ctrl+d</strong><br>
+scroll up: <strong>Ctrl+u</strong><br>
+&hellip;. and a bunch of other vim commands, feel free to make pull requests for new ones</p>
+
+    </div>
+</section>
+
+
+
+
+        
+    
+</div>
+</body>
+</html>
+
